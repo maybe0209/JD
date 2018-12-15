@@ -1,0 +1,74 @@
+地址:http://10.9.48.162:3009
+发送方式:post
+数据类型:json数据
+
+1.注册成功
+   请求: (req)
+   {
+       type:0,
+       message:{
+           user:myb,                //用户名存在
+           passwrod:12345678,
+       }
+   }
+   返回 : (res)
+   {
+       type:0,
+       error:null
+   }
+2.注册失败
+   请求: (req)
+   {
+       type:0,
+       message:{
+           user:myb,
+           passwrod:12345678,
+       }
+   }
+   返回 : (res)
+   {
+       type:1,
+       error:null
+   }
+3.登录失败
+   请求: (req)
+   {
+       type:2,
+       message:{
+           user:myb,
+           passwrod:12345678,
+       }
+   }
+   返回 : (res)
+   {
+       type:2,
+       error:null
+   }
+4.登录成功
+   请求: (req)
+   {
+       type:2,
+       message:{
+           user:myb,
+           passwrod:12345678,
+       }
+   }
+   返回 : (res)
+   {
+       type:3,
+       message:{user:myb},
+       error:null
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+

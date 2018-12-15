@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/particulars.css">
+    <script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="head-astrict">
+    <div id="astrict">
+        <div class="register-jd">
+            <div id="site">
+                <a class="shouye" href="../../index.html">
+                    <img src="../img/particulars/aaaaa.bmp" alt="">
+                    <span>京东首页</span>
+                </a>
+                <img class="beiJng-point" src="../img/beijing.jpg" alt="#">
+                <span>北京</span>
+            </div>
+            <ul>
+                <span>你好,请登录</span>
+                <li class="red right-side">免费注册</li>
+                <li class="right-side">我的订单</li>
+                <li class="pull-down right-side">我的京东</li>
+                <li class="right-side">京东会员</li>
+                <li class="pull-down right-side">企业采购</li>
+                <li class="pull-down right-side">客户服务</li>
+                <li class="pull-down right-side">网站导航</li>
+                <li id="mobile-jd">
+                    手机京东
+                    <div id="mobile">
+                        <div id="mobile-code"></div>
+
+                    </div>
+
+                </li>
+            </ul>
+            <h1 id="jdLogo">
+                <a href="../../index.html"></a>
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="search">
+    <div class="search-box">
+        <input type="text" id="frame" placeholder="京东">
+        <div id="frame-right">
+            搜索
+            <div id="camera"></div>
+        </div>
+        <div class="shopping-cart">
+            <a href="#">我的购物车</a>
+            <span>0</span>
+        </div>
+    </div>
+</div>
+<!-------------放大镜-------------->
+<div class="magnifying-glass">
+    <div id="demo">
+                 <div id="small-box">
+                     <div id="mark"></div>
+                     <div id="float-box"></div>
+                     <img class="magnify" />
+                 </div>
+                 <div id="big-box">
+                     <img class="magnify" />
+                 </div>
+    </div>
+
+<!----------------------------详情-->
+<div class="particulars">
+    <div class="sku-name"></div>
+    <div class="item-hide"><a href="#"></a></div>
+    <div class="pingou-banner-new">
+        <p>京东拼购</p>
+        <p>
+            <span>2人拼</span>
+            <span id="price">2人拼</span>
+            <span>[￥</span>
+            <span id="price-jia">2人拼</span>
+            <span id="blue">降价通知</span>
+            <span id="right-1">累计评级</span>
+            <span id="right-2">80+</span>
+        </p>
+        <p>
+            <span>优 惠 券</span>
+            <span>满980减60</span>
+        </p>
+        <p>
+            <span>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</span>
+            <span>赠品</span>
+            <img src="../img/particulars/5bee2020Na5def91a.jpg" alt="">
+            <img src="../img/particulars/5bee2020Na5def91a.jpg" alt="">
+            <span>(赠完为止)</span>
+        </p>
+        <p>
+            <span>赠金豆</span>
+            <span>满额返券</span>
+        </p>
+    </div>
+    <div class="summary-price-wrap">
+        <div class="summary-color">
+            <div>选择颜色</div>
+            <div class="item">
+                <img src="../img/particulars/f8c13aa434e13c09.jpg" alt="">
+                <div>金色</div>
+            </div>
+            <div class="item">
+                <img src="../img/particulars/09d1be0427de0bf4.jpg" alt="">
+                <div>深空灰色</div>
+            </div>
+            <div class="item">
+                <img src="../img/particulars/798f01f17533b837.jpg" alt="">
+                <div>银色</div>
+            </div>
+            <div class="release">
+                <div>选择版本</div>
+                <div class="release-1">全网通 64G</div>
+                <div class="release-1">全网通 256G</div>
+                <div class="release-1">全网通 512G</div>
+            </div>
+            <div class="release">
+                <div>增值保障</div>
+                <div class="release-2"><img src="../img/particulars/time1.jpg" alt="">全年保修2年 ¥359</div>
+                <div class="release-2"><img src="../img/particulars/time1.jpg" alt="">碎屏保1年 ¥399</div>
+                <div class="release-2"><img src="../img/particulars/time1.jpg" alt="">保质保意外 2年 ¥399</div>
+            </div>
+        </div>
+        <div class="choose-btns">
+                <div class="jiajian">
+                    <input type="text" value="1" id="iput-jia-jian">
+                    <button id="jia">+</button>
+                    <button id="jian">-</button>
+                    </div>
+                <div class="choose-btns-red">
+                    <p class="jianjia">￥8818.00</p>
+                    <p>我要开团</p>
+                </div>
+                <div class="choose-btns-green">
+                    <p class="yuanjia">￥9299.00</p>
+                    <p>单独购买</p>
+                </div>
+        </div>
+    </div>
+    <p>温馨提示&nbsp;&nbsp;&nbsp;&nbsp;·支持7天无理由退货(激活后不支持)</p>
+</div>
+</div>
+<img src="../img/particulars/5bea665aN87890f23.jpg" alt="">
+</body>
+<script type="text/javascript" src="../js/particulars.js"></script>
+<script>
+    var res=window.location.href;
+    res=res.split("?")[1]
+    res=res.replace("assets","..")
+    $(".magnify").attr("src",res)
+
+</script>
+</html>
